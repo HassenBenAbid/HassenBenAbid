@@ -21,6 +21,10 @@ a{
 
 }
 
+.smallHigh{
+	font-weight: bold;
+}
+
 .container{
 	width: 960px;
 	margin: 0 auto;
