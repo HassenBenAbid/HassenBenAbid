@@ -22,7 +22,12 @@ a{
 }
 
 .smallHigh{
+	color: #fff;
 	font-weight: bold;
+}
+
+.smallHigh:hover{
+	color: black;
 }
 
 .container{
