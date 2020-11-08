@@ -169,16 +169,17 @@ a{
 
 .Vid {
 	width : 60%;
+	height: 40%;
 	outline-style: solid;
 	outline-color: #c2c2c2;
 	outline-width: 1px;
 
-	transition: width 0.2s ease-out;
+	transition: width 0.1s ease-out;
 }
 
 .Vid:hover {
 	width: 65%;
-	transition: width 0.2s ease-in;
+	transition: width 0.1s ease-in;
 }
 
 .Img{
