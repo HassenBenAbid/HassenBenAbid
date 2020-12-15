@@ -7,7 +7,7 @@ var main = (function(){
 
 			$('a[href^=\\#]').click(function() {
 
-				if (window.location.pathname.indexOf('index') == -1)
+				if (window.location.pathname.indexOf('index') == -1 && window.location.pathname.indexOf('html') != -1)
 					window.location.pathname = "index.html";
 		
 				var target = $(this.hash);
