@@ -1,7 +1,14 @@
 
+
 var main = (function(){
 	
-	$('#headerHolder').load(window.location.href + '/headerPre.html', () => {
+	var path = 'headerPre.html';
+
+	if (window.location.pathname.indexOf('index') == -1 && window.location.pathname.indexOf('html') != -1){
+		path = window.location.href + '/headerPre.html';
+	}
+
+	$('#headerHolder').load(path, () => {
 		
 		$(function() {
 
