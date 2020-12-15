@@ -5,7 +5,7 @@ var main = (function(){
 	var path = 'headerPre.html';
 
 	if (window.location.pathname.indexOf('index') == -1 && window.location.pathname.indexOf('html') != -1){
-		path = window.location.href + '/headerPre.html';
+		path = '../headerPre.html';
 	}
 
 	$('#headerHolder').load(path, () => {
