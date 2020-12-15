@@ -1,10 +1,6 @@
 
 $.ajax({
        headers: { 'Access-Control-Allow-Origin': '*' },
-       crossDomain: true,
-       success: function () { alert('it works') },
-       error: function() {alert('it doesnt work')},
-       datatype: 'jsonp'
 })
 
 var main = (function(){
