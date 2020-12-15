@@ -1,7 +1,7 @@
 
 var main = (function(){
 	
-	$('#headerHolder').load( __dirname + 'headerPre.html', () => {
+	$('#headerHolder').load(window.location.href + '/headerPre.html', () => {
 		
 		$(function() {
 
