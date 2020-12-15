@@ -1,8 +1,4 @@
 
-$.ajax({
-       headers: { 'Access-Control-Allow-Origin': '*' },
-})
-
 var main = (function(){
 	
 	$('#headerHolder').load('headerPre.html', () => {
