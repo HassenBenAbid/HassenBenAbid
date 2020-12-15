@@ -14,21 +14,9 @@
 </head>
 <body>
 
-	<header>
-		<div class="sidebar">
-			<div class=container>
-				<div class="home"><a>Hassen Ben Abid</a></div>
-				<div class="nav">
-					<ul>
-						<li class="navL"><a id="about">About</a></li>
-						<li class="navL"><a id="Professional">Professional Projects</a></li>
-						<li class="navL"><a id="personal">Personal Projects</a></li>
-						<li class="navL"><a id="contact">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
+	<div id = "headerHolder">
+
+	</div>
 <!--Preface-->
 	<div class="IntroSec"></div>
 	<div class="Intro"  data-parallax="true">
@@ -48,15 +36,19 @@
 		<h2 class="sectionTitles">Professional Projects</h2>
 		<div class="row">
 			<div class="column">
-	
-				<img src="./images/CeosDisplay.PNG" class="Img" id="ceosImg"><br/>
 
+				<div>
+					<a href="ProjectsPages/ProjectOcct.html">
+						<img class="projectImage" src="./images/OcctDisplay.PNG" /><br/>
+						<br>
+						<div class="SmallTitle">Project Occt</div>
+					</a>
+				</div>
 
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Kotlin</span>
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Android studio</span>
 				<br/>
 
-				<div class="videoText">this app is planned to be released at the first quarter of next year and I developped it for a small company specialized in medical equipement. It make digital acuity tests more affordable for the more poor countries. Using a smartphone compatible with miracast this app cast a secondary display where you can view the charts on any screen of your choice transforming the phone into a simple controller.</div>
 			</div>
 
 			<div class="column">
@@ -73,65 +65,76 @@
 		<h2 class="sectionTitles">Personal Projects</h2>
 		<div class="row">
 			<div class="column">
-				<iframe class="Vid" src="https://www.youtube.com/embed/Xr4G_if2Zms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+				<div>
+					<a href="ProjectsPages/Cygnus3D.html">
+						<img class="projectImage" src="./images/cygnus3D.PNG" /><br/>
+						<br>
+						<div class="SmallTitle">Cygnus3D : Game Engine</div>
+					</a>
+				</div>
 
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C++</span>
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">OpenGL</span>
 				<br/>
 
-				<a href="https://github.com/HassenBenAbid/Cygnus3D" target="_blank" class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
-
-				<div class="videoText"><br/>This is a small game engine that Im working on using C++/OpenGL. For the moment it has a basic rendering, some physics implementation using bullet, a loading model system with skeletal animation and also a basic lighting system.The next feature are the shadows and some optimisation on some of my code.</div>
+                <a href="https://github.com/HassenBenAbid/Cygnus3D" target="_blank" 
+                class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
 			</div>
 
 			<div class="column">
-				<iframe class="Vid" src="https://www.youtube.com/embed/hEGC3Xegj4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+				<div>
+					<a href="ProjectsPages/FearNot.html">
+						<img class="projectImage" src="./images/FearNot.PNG" /><br/>
+						<br>
+						<div class="SmallTitle">FearNot</div>
+					</a>
+				</div>
 
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
 				<br/>
 
 				<a href="https://github.com/HassenBenAbid/FearNot" target="_blank" class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
-
-				<div class="videoText"> This was my second bachelor year project, nearly all assets were created by me. In this game I tried to experiment with new things like procedural generation and ragdolls physics.</div>
 			</div>
 
 			<div class="column">
-				<iframe class="Vid" src="https://www.youtube.com/embed/ihONz6DQQPE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+				<div>
+					<a href="ProjectsPages/Stupidus.html">
+						<img class="projectImage" src="./images/Stupidus.PNG" /><br/>
+						<br>
+						<div class="SmallTitle">Stupidus : 2 Days Jam</div>
+					</a>
+
+				</div>
 
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
 				<br/>
 
 				<a href="https://github.com/HassenBenAbid/Stupidus" target="_blank" class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
-
-				<div class="videoText"> I developed this game in 2 days in a game jam in my university.<br/><a href="https://itch.io/" target="_blank" class="smallHigh">Assets from itch.io</a></div>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="column">
-				<iframe class="Vid" src="https://www.youtube.com/embed/cXvkyW0qWfQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+				<div>
+					<a href="ProjectsPages/SmallProjects.html">
+						<img class="projectImage" src="./images/DontFall.png" /><br/>
+						<br>
+						<div class="SmallTitle">Small projects</div>
+					</a>
 
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C++</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">OpenGL</span>
-				<br/>
-
-				<a href="https://github.com/HassenBenAbid/FreeFalling" target="_blank" class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
-
-				<div class="videoText"> I built this game in my journey to understand openGL and start building my own game engine, it's basically a flappyBird clone.</div>
-			</div>
-
-			<div class="column">
-				<iframe class="Vid" src="https://www.youtube.com/embed/FPWH1Jr8bKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+				</div>
 
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C++</span>
 				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Qt</span>
+				<span class="langTag w3-tag w3-blue w3-round-large w3-center">OpenGL</span>
 				<br/>
 
-				<a href="https://github.com/HassenBenAbid/KPlanes" target="_blank" class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/><br/>
+			</div>
 
-				<div class="videoText">This is only here for its nostalgia effect. My first game with an actual graphical interface and my first mile stone. Created with the use of C++/Qt, it helped me understand the base concepts of game programming.<br/><a href="https://itch.io/" target="_blank" class="smallHigh">Assets from itch.io</a></div>
+			<div class="column">
+
 			</div>
 
 			<div class="column">
@@ -164,6 +167,7 @@
 	<div class="footer">
 		<h1>“The day you stop learning is the day you stop existing.” <br> <span>-Me :)<span></h1>
 	</div>
+	<script type="text/javascript" src="./control/jquery-3.5.1.min.js" ></script>
 	<script type="text/javascript" src="./control/control.js"></script>
 </body>
 </html>
