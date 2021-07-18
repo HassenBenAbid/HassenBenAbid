@@ -1,24 +1,33 @@
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	margin: auto;
 	width: 100%;
-	background-color : #c2c2c2;
+	background-color: #191f36;
+
 }
 
 #headerHolder{
-	background: #003366;
-	background-color: rgba(0,51,102,0.8);;
+	background-color: rgba(17, 2, 71, 0.8);
+	border-bottom: 2px solid rgba(255,255,255,.05);
 	width: 100%;
 	top: 0;
 	position: fixed;
-	height: 55px;
+	height: 60px;
 	z-index: 2;
-	
 }
 
 a{
-	text-decoration: none;
+	text-decoration:none;
 	color: white;
+	font-weight: bold;
+}
 
+a:hover{
+	text-decoration: none;
+	color: #155492;
 }
 
 .smallHigh{
@@ -30,9 +39,23 @@ a{
 	color: green;
 }
 
-.container{
+.MainContainer{
 	width: 960px;
 	margin: 0 auto;
+}
+
+.TitleLine{
+	border: 4px round #fff;
+}
+
+.TitleUnderline{
+	background: -webkit-linear-gradient(-70deg,rgb(78,52,201),rgb(104,109,224));
+	height: 4px;
+	border-radius: 4px;
+	width: 50px;
+	left: 50%;
+	margin-left: -25px;
+	position: relative;
 }
 
 /*sidebar*/
@@ -40,8 +63,8 @@ a{
 	color: #fff;
 	float: left;
 	font-family: righteous, "baloo chettan", Open Sans;
-	font-size: 1.7em;
-	padding-top: 15px;
+	font-size: 26px;
+	padding-top: 11px;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -49,17 +72,18 @@ a{
 .navL{
 	list-style: none;
 	float: left;
-	margin-left: 70px;
+	margin-left: 60px;
+	margin-top: 15px;
 	
 	font-family: righteous, "baloo chettan", Open Sans;
 }
 
 .nav{
 	float: right;
+	z-index: 3;
 }
 
 .navL a{
-
 	color: #fff;
 	font-size: 1em;
 
@@ -73,47 +97,96 @@ a{
 
 .navL a:hover{
 	background-color: white ;
-	color: #003366;
+	color: rgb(78,52,201);
+	transition: background-color ease-in 0.2s, color ease-in 0.2s ;
+}
+
+.home a:hover{
+	color: rgb(78,52,201);
 	transition: background-color ease-in 0.2s, color ease-in 0.2s ;
 }
 
 /*preface*/
 
 .IntroSec{
-	padding-top: 500px;
-	
 	height: 100%;
 	width: 100%;
-
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: -1;
-
 }
 
 .Intro{
 	 text-align: center;
-     position: absolute;
-     top: 36%;
-     left: 50%;
-     transform: translate(-50%, -85%);
-     color: #003366;
-     padding-bottom: 0;
+	 display: grid;
+	 place-items: center;
+	 grid-template-areas: "inner-div";
+}
+
+#VideoWrap{
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	padding-right: 100%;
+	overflow: hidden;
+	grid-area: inner-div;
+}
+
+#MainVideo{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+
+#Overlay{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: .6;
+	grid-area: inner-div;
+}
+
+.introText{
+	align-items: center;
+	left: 37.5%;
+	z-index: 1;
+	grid-area: inner-div;
+}
+
+.FloatInAnimation{
+	animation-name: floatIn;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes floatIn {
+	from {transform: translate(0, 0px); opacity: 0%;}
+	to { transform: translate(0, -30px); opacity: 100%;}
 }
 
 .nameTop{
-	font-size: 3.5em;
+	font-size: 3.8em;
 	font-family: righteous, "baloo chettan", Open Sans ;
+	color: white;
 }
 
 .toppa{
 	margin-top: -17px;
-	font-family: montserrat, "roboto condensed";
-	font-size: 1.4em;
+	font-family: "roboto condensed";
+	font-size: 1.6em;
 	text-align: center;
-	font-weight: 400;
+	font-weight: 550;
+	color: white;
 }
 
 .topBut{
@@ -121,59 +194,340 @@ a{
 	font-size: 1.3em;
 	font-family: Righteous, "baloo chettan", Open Sans;
 
+	text-decoration: none;
 	display: inline-block;
-	width: 200px;
+	width: 45%;
 	font-weight: bold;
 	padding: 10px;
-	color: #003366;
-	border: 2px solid #003366 ;
+	color: white;
+	border: 3.5px solid white;
 	text-align: center;
 	outline: none;
 	text-decoration: none;
 	cursor: pointer;
-	transition: background-color 0.2s ease-out, color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
 }
 
 .topBut:hover, .btn:active{
-	background-color: #003366;
-	color: #fff ;
-	transition: background-color 0.3s ease-in, color 0.3s ease-in;
-
+	background-color: white;
+	color: rgb(69, 43, 197);
+	border-color:rgb(69, 43, 197);
+	transition: all 0.2s ease-in;
 }
 
 /*about section*/
 
 .HAbout{
 	text-align: center;
-	font-size: 2.2em;
-	color:#ffffff;
+	font-size: 2.4em;
+	background: -webkit-linear-gradient( -70deg,#4e34c9,#686de0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	padding-top: 15px;
-	font-family: righteous, "baloo chettan", Open Sans
+	padding-bottom: 0px;
+	font-family: righteous, "baloo chettan", "Open Sans";
 }
 
 #aboutC{
-	background-color: #003366;
 	color: #cccccc;
 	padding-bottom: 0px;
-
+	margin-left: 0%;
+	margin-right: 0%;
 }
 
 .PAbout{
+	padding-top: 15px;
 	padding-bottom : 25px;
 	font-size: 1.1em;
 	font-family: "righteous", "baloo chettan",Open Sans;
 	margin : 0;
 }
 
-/*portfolio section*/
+/*Professional section*/
 
-.Img{
-	width : 60%;
-	outline-style: solid;
-	outline-color: #000;
-	outline-width: 1px;
-
+#ProProjects{
+	background-color: #111525;
+	width: 100%;
+	height: 20%;
 }
+
+.carousel-item{
+	margin-top: 5%;
+	height: 400px;
+}
+
+.Controls{
+	position: relative;
+	max-width: 1220px;
+	height: 100%;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.ControlNext{
+	background: url("../images/rightArrow.png") center center/64px no-repeat;
+	position: absolute;
+    top: -140px;
+	right: 1%;
+	width: 100px;
+	height: 100px;
+	margin-top: -200px;
+	z-index: 4;
+	cursor: pointer;
+	transition: width 0.2s ease-in;
+}
+
+.ControlPrev{
+	background: url("../images/leftArrow.png") center center/64px no-repeat;
+	position: absolute;
+    top: -140px;
+	left: 1%;
+	width: 100px;
+	height: 100px;
+	margin-top: -200px;
+	z-index: 4;
+	cursor: pointer;
+	transition: width 0.2s ease-in;
+}
+
+.ControlNext:hover, .ControlPrev:hover{
+	width: 120px;
+	transition: width 0.2s ease-in;
+}
+
+.VideoWrapper {
+	position: relative;
+	width: 550px;
+	height: 309px;
+	border-radius: 12px;
+	overflow: hidden;
+	transform-origin: center;
+	cursor: pointer;
+	margin-left: 5%;
+}
+
+.ProfVideo{
+	float : left;
+	box-shadow: rgba(0,0,0,.2) 20px 20px 64px 0;
+}
+
+.VideoWrapper:hover > .ThumbImage{
+	transform: scale(1.02, 1.02);
+	transition: all 0.2s ease-out;
+}
+
+.VideoWrapper:hover > .PlayImage{
+	transform: scale(1.15, 1.15);
+	transition: all 0.2s ease-out;
+}
+
+.ThumbImage{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	border-radius: 12px;
+	transition: all 0.2s ease-in;
+}
+
+.PlayImage{
+	background: url("../images/play.png") center center/cover no-repeat rgba(255,255,255,0.1);
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -35px;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	transition: all 0.2s ease-in;
+}
+
+.VideoDescription{
+	margin-right: 6%;
+	padding-top: 1%;
+	width: 35%;
+	float: right;
+	color: white;
+	font-family: "righteous", "baloo chettan","Open Sans";
+}
+
+.Description{
+	padding-top: 2.5%;
+	clear:both;
+	line-height : 24px;
+}
+
+.LanguagesUsed{
+	line-height : 25px;
+}
+
+/*Youtube Modal*/
+
+#ModalVideo{
+	height: 80%;
+	width:  80%;
+	left: 10%;
+	top: 10%;
+}
+
+.modal-dialog{
+	min-width:  80%;
+	min-height: 80%;
+	background: none;
+	z-index: 10;
+}
+
+.CloseModal{
+	border: 2px solid #fff;
+	position: fixed;
+	z-index: 12;
+	top: 20px;
+	left: 10px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 100%;
+	background-image: url(../images/close.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #4e34c9;
+	box-shadow: rgba(0,0,0,.05) 0 10px 16px 0;
+	background-size: cover !important;
+	transition: all 0.2s ease-out;
+}
+
+.CloseModal:hover{
+	background-color: red;
+	border-color: red;
+	transition: all 0.2s ease-in;
+}
+
+/*Quote*/
+
+#Quote{
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: #c2c2c2;
+}
+
+#Quote h1{
+	padding-top: 10px;
+	font-size: 40px;
+	font-family: "righteous", "baloo chettan", "Open Sans";
+}
+
+#FirstPart{
+	padding-right: 25%;
+}
+
+#SecondPart{
+	padding-left: 25%;
+}
+
+#Quote span{
+	font-size: 15px;
+}
+
+/*Titles*/
+
+.TitleSideline{
+	background: -webkit-linear-gradient(-70deg,rgb(78,52,201),rgb(104,109,224));
+	height: 19px;
+	border-radius: 4px;
+	width: 5px;
+	left: 0.1%;
+	position: relative;
+	float: left;
+}
+
+.MiniTitle{
+	padding-left: 1.1%;
+	line-height: 18px;
+	float: left;	
+	font-size: 25px;
+	font-weight:bold;
+}
+
+.Title{
+	background-color: #111525;
+}
+
+.sectionTitles{
+	padding-top: 15px;
+	margin : 0;
+	text-align: center;
+	font-size: 2.4em;
+	background: -webkit-linear-gradient( -70deg,#4e34c9,#686de0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: righteous, "baloo chettan", "Open Sans";
+}
+
+/*Personal projects*/
+
+.ColumnFirst{
+	padding-left: 10%;
+	background-color: #111525;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 19%;
+	display: flex;
+}
+
+.PerVideoLeft{
+	position: relative;
+	width: 70%;
+	height: 309px;
+	border-radius: 12px;
+	overflow: hidden;
+	transform-origin: center;
+	cursor: pointer;
+	margin-left: 0%;
+}
+
+
+.ColumnDescriptionRight{
+	width: 100%;
+	margin-left: 2.5%;
+	padding-right: 20%;
+	float: right;
+	color: white;
+	font-family: righteous, "baloo chettan", "Open Sans";
+}
+
+.ColumnSecond{
+	background-color: #111525;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-right: 10%;
+	display: flex;
+}
+
+.PerVideoRight{
+	margin-right: 11%;
+	width: 70%;
+	position: relative;
+	height: 309px;
+	border-radius: 12px;
+	overflow: hidden;
+	transform-origin: center;
+	cursor: pointer;
+}
+
+.ColumnDescriptionLeft{
+	width: 100%;
+	margin-right: 2.5%;
+	padding-left: 21%;
+	padding-top: 0.5%;
+	float: right;
+	color: white;
+	font-family: righteous, "baloo chettan", "Open Sans";
+}
+
+
+/*Others*/
 
 .parallaxIn{
 	opacity: 1;
@@ -183,42 +537,6 @@ a{
 .parallaxOut{
 	opacity: 0;
 	transition: opacity 0.3s ease-in;
-}
-
-.videoText td{
-	border: solid 20px transparent;
-	width: 20%;
-	text-align: center;
-}
-
-.projectImage {
-	width : 60%;
-	height: 40%;
-
-	outline-style: solid;
-	outline-color: #c2c2c2;
-	outline-width: 1px;
-
-	transition: width 0.1s ease-out;
-}
-
-.projectImage:hover {
-	width : 65%;
-
-	transition: width 0.1s ease-in;
-}
-
-.row{
-	display: flex;
-
-	padding-top: 3%;
-	padding-bottom: 3%;
-	background-color: #222222; 
-}
-
-.column{
-	flex: 50%;
-	text-align: center;
 }
 
 .langTag{
@@ -239,25 +557,6 @@ a{
 	transition: font-size 0.1s ease-out;
 }
 
-.gitButton:hover{
-	font-size: 1em;
-
-	transition: font-size 0.1s ease-in;
-}
-
-/*others*/
-
-.sectionTitles{
-	text-align: center;
-	font-size: 2.2em;
-	color:#ffffff;
-	background-color: #121212;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: righteous, "baloo chettan", Open Sans;
-	margin : 0;
-}
-
 .ISkills{
 	list-style: none;
 	float: left;
@@ -276,220 +575,16 @@ a{
 }
 
 
-
 /*contact section*/
 
-.contactContainer{
-	background-color: #222222;
-}
-
-.contact{
-	display: flex;
-	flex: 1 1 auto;
-	flex-flow: row;
-	position: relative;
-	width: 580px;
-	margin-left: 194px;
-	color: #c2c2c2;
-
-}
-
-.formControl{
-	width: 250px;
-	background-color: transparent;
-	border: none;
-	outline: none;
-	border-bottom: 1px solid #c2c2c2;
-	color: #c2c2c2;
-	font-size: 16px;
-	margin-bottom: 25px;
-}
-
-.submit{
-	background-color: white; 
-}
-
-.contactText{
-	margin: 20px;
-}
-
-.info{
-	margin-bottom: 30px;		
-}
-
-.info span{
-	font-weight: bold;
-}
-
-/*end section*/
-
-.footer{
-	margin: -1%;
-	padding: 0;
+#ContactDesc{
 	text-align: center;
-
+	padding-top: 1%;
+	padding-bottom: 1%;
 	color: #c2c2c2;
-	background-color: #003366;
-}
+	font-family: righteous, "baloo chettan", "Open Sans";
+	font-size: 15px;
+}	
 
-.footer h1{
-	padding-top: 10px;
-	border-bottom: solid 1px #c2c2c2 ;
-	font-size: 1.7em;
-	font-family: righteous, "baloo chettan", Open Sans;
-}
-
-.footer span{
-	font-size: 11px;
-}
-
-/*project page*/
-
-.ProjectBody{
-	background-color: #222222
-}
-
-.ProjectPage {
-
-	text-align: center;
-	padding-top: 90px;
-	
-	height: 100%;
-	width: 70%;
-
-	margin-left: 15%;
-
-
-	position: relative;
-	background-color:#222222;
-}
-
-.ProjectName{
-	margin-bottom: 2%;
-	padding-left: 1%;
-	text-align: left;
-
-	font-family: "righteous", "baloo chettan","Open Sans";
-	font-size: 2.2em;
-
-	color:#ffffff;
-	border-bottom: solid;
-	border-color: #003366;
-	
-
-}
-
-.Vid {
-
-	outline-style: solid;
-	outline-color: #c2c2c2;
-	outline-width: 1px;
-}
-
-.videoText{
-	font-family: "righteous", "baloo chettan","Open Sans";
-	font-size: 1.1em;
-	color: #fff;
-	
-
-	text-align: center;
-	margin-top: 2%;
-	padding-left: 1%;
-
-	border-top: solid;
-	border-color: #003366;
-
-	padding-top: 2%;
-}
-
-.ContactFooter {
-
-	margin-top: 2%;
-	margin-bottom: 5%;
-	padding-top : 1%;
-
-	border-top: solid;
-	border-color: #003366;
-
-	font-family: "righteous", "baloo chettan","Open Sans";
-	font-size: 1.6em;
-	color: #fff;
-	
-}
-
-.ContactFooter a{
-	color: white;
-
-	transition: color 0.1s ease-out;
-}
-
-.ContactFooter a:hover{
-	color: #003366;
-
-	transition: color 0.1s ease-out;
-}
-
-.PictureButtons {
-	color:  #003366;
-	background-color: #c2c2c2;
-
-	font-size: 1em;
-	padding: 5px 5px;
-	border: 1px solid transparent;
-    border-radius: 4px;
-	cursor: pointer;
-
-	text-align: center;
-
-	transition: background-color ease-out 0.2s, color ease-out 0.2s;
-}
-
-.PictureButtons:hover {
-	background-color:#003366 ;
-	color:#ffffff;
-	transition: background-color ease-in 0.2s, color ease-in 0.2s ;
-}
-
-.IndexButton{
-
-	border: 1px solid transparent;
-    border-radius: 4px;
-
-	width: 4%;
-	height: 6%;
-
-	margin-top: 1%;
-
-	color:#003366;
-	background-color:#222222;
-	border: none;
-}
-
-.IndexButton:hover{
-	background-color:#003366 ;
-	color:#ffffff;
-	transition: background-color ease-in 0.2s, color ease-in 0.2s ;
-}
-
-.selectedIndex{
-	background-color:#003366 ;
-	color:#ffffff;
-}
-
-.SmallTitle{
-	font-family: "righteous", "baloo chettan","Open Sans";
-	font-size: 1.6em;
-
-	color: #c2c2c2;
-	font-weight: bold;
-
-
-
-	margin-bottom: 1%;
-}
-
-.othersPicture{
-
-}
 
 

@@ -1,48 +1,47 @@
+//WEach time a floatIn object get in view, we start the floatIn animation.
+const observer = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) entry.target.classList.add('FloatInAnimation');
+	});
+});
 
+//We get all objects that have the scrollFade ID.
+const containerToBeObserved = document.querySelector("#scrollFade")
+observer.observe(containerToBeObserved);
 
-var main = (function(){
+//Modal
+
+$("document").ready(function() {
+
+	//Gets the video src from the data-src on each button
+	var videoSource;  
+	var oldScroll;
+
+	$('.VideoWrapper').click(function() {
+		//Set a youtube video with autoplay.
+		videoSource = $(this).data("src");
+		$("#ModalVideo").attr('src',videoSource + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" );	
+	}); 	
 	
-	var path = 'headerPre.html';
+	$('#YoutubeModal').on('show.bs.modal', function() {
+		//We prevent the main page from being scrolled.
+		oldScroll = window.scrollY;
+		document.body.style.position = 'fixed';
+		document.body.style.top = `-${oldScroll}px`; 
+		document.documentElement.style.scrollBehavior = "auto";
 
-	if (window.location.pathname.indexOf('index') == -1 && window.location.pathname.indexOf('html') != -1){
-		path = '../headerPre.html';
-	}
-
-	$('#headerHolder').load(path, () => {
-		
-		$(function() {
-
-			$('a[href^=\\#]').click(function() {
-
-				if (window.location.pathname.indexOf('index') == -1 && window.location.pathname.indexOf('html') != -1)
-					window.location.pathname = "index.html";
-		
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-				  $('html,body').animate({
-					scrollTop: target.offset().top
-				  }, 500);
-				}
-			});
-
-			if(window.location.hash){
-				scroll(0, 0);
-				setTimeout(function(){
-					scroll(0, 0);
-				}, 1);
-			}
-
-			if (window.location.hash){
-				$('html,body').animate({
-					scrollTop: $(window.location.hash).offset().top + 'px'
-				  }, 500);
-			}
-
-		  });
+		//Remove background and border
+		$(".modal-content").css("background","transparent");
+		$(".modal-content").css("border","none");
 	})
 
-})();
-
+	//When we close the modal, we stop the youtube video and make the page scrollable again.
+    $('#YoutubeModal').on('hide.bs.modal', function() {
+		$("#ModalVideo").attr('src',videoSource); 
+		document.body.style.position = '';
+		window.scrollTo(0, oldScroll);
+		document.documentElement.style.scrollBehavior = "smooth";
+	})
+});
 
 

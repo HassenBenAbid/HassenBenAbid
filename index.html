@@ -4,210 +4,327 @@
 	<title>Hassen Ben Abid</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./style/main.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./style/w3.css"> 
 </head>
 <body>
 
 	<div id = "headerHolder">
-
+		<div class="sidebar">
+			<div class="MainContainer">
+				<div class="home"><a href="#IntroSec">Hassen Ben Abid</a></div>
+				<div class="nav">
+					<ul>
+						<li class="navL"><a href="#aboutC">About</a></li>
+						<li class="navL"><a href="#ProProjects">Professional Projects</a></li>
+						<li class="navL"><a href="#PersProjects">Personal Projects</a></li>
+						<li class="navL"><a href="#ContactC">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 <!--Preface-->
-	<div class="IntroSec"></div>
+	<div class="IntroSec" id="IntroSec"></div>
 	<div class="Intro"  data-parallax="true">
-		<h1 class="nameTop">I m Hassen Ben Abid</h1>
-		<p class="toppa">A software and game programmer</p>
-		<a href="./others/Resume.pdf" class="topBut" download>Resume</a>
+		<div id="VideoWrap">
+			<div id="Overlay"></div>
+			<iframe id="MainVideo" src="https://www.youtube.com/embed/ud_refZuQoA?controls=0&autoplay=1&mute=1&loop=1&playlist=ud_refZuQoA&showinfo=0" allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; loop; picture-in-picture;" allowfullscreen></iframe>
+		</div>
+		<div class="introText" id="scrollFade">
+			<h1 class="nameTop">I m Hassen Ben Abid</h1>
+			<p class="toppa">A software and game programmer</p>
+			<a href="./others/Resume.pdf" class="topBut" download>Resume</a>
+		</div>
 	</div>
 <!--about me section-->
 	<div id="aboutC">
-		<div class="container" >
+		<div class="MainContainer" >
 			<h2 class="HAbout">About me</h2>
+			<div class="TitleUnderline"></div>
+			<div class="TitleLine"></div>
 			<p class="PAbout">Hi! I'm Hassen, a software and a game programmer with academic experience in computer science. I started learning about game programming at the age of 13 and made my first game at the age of 14. 
 				<br><br> Here you can see some of my work and the personel-fun-things I've been working on. Building softwares and games from the ground up is my passion and I have a strong perseverance for learning new things.
+				<br><br> Currently I'm working in Strange Loop Games on <a href="https://store.steampowered.com/app/382310/Eco/">Eco</a>.
 			</p>
 		</div>
 	</div>
+
 <!--Professional Projects section-->
-	<div id="profC">
-		<h2 class="sectionTitles">Professional Projects</h2>
-		<div class="row">
-			
-			<div class="column">
-				<div>
-					<a href="ProjectsPages/StolenpadStudio.html">
-						<img class="projectImage" src="./images/StolenPad.jpg"/><br/>
-						<br>
-						<div class="SmallTitle">Stolenpad Studio : Game developer</div>
-					</a>
-
+<div class="Title">
+	<div class="sectionTitles">Professional Projects</div>
+	<div class="TitleUnderline"></div>
+</div>
+<div id="ProProjects" class="carousel slide" data-ride="carousel" data-interval="false">
+  	<!-- Wrapper for slides -->
+	<div class="carousel-inner container">
+		<div class="row align-items-center">
+			<div class="carousel-item active container">
+				<div class="VideoWrapper ProfVideo" data-toggle="modal" data-src="https://www.youtube.com/embed/ud_refZuQoA" data-target="#YoutubeModal" data-backdrop="static" data-keyboard="false">
+					<div class="PlayImage"></div>
+					<div class="ThumbImage" style="background: url('./images/Eco.png') no-repeat center; background-size: cover;"></div>
 				</div>
-
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
-				<br/>
-			</div>
-
-			<div class="column">
-				<div>
-					<a href="ProjectsPages/AmilcarTechnologies.html">
-						<img class="projectImage" src="./images/Amilcar.jpg" /><br/>
-						<br>
-						<div class="SmallTitle">Amilcar Technologies : Game developer</div>
-					</a>
-
+				<div class="VideoDescription">
+					<div class="TitleSideline"></div>
+					<div class="MiniTitle">Strange Loop Games</div>
+					<div class="Description">
+						<div>While working with SLG on ECO I worked on different systems : <br/>
+							- Reworking the chat wich its different channels, customisations and its working logic on the server side.<br/>
+							- Reworking the tooltip system (the different Hints that show up for the player). <br/>
+							- Also I touched into many other aspects of the game while fixing different bugs and adding many new features.
+						</div>
+					</div>
+					<div class="LanguagesUsed">
+						<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
+						<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
+					</div>
 				</div>
+		  	</div>
 
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
-				<br/>
+	  	<div class="carousel-item container">
+			<div class="VideoWrapper ProfVideo" data-toggle="modal" data-src="https://www.youtube.com/embed/0KgrstnQSOY" data-target="#YoutubeModal" data-backdrop="static" data-keyboard="false">
+				<div class="PlayImage"></div>
+				<div class="ThumbImage" style="background: url('./images/StolenPadStudio.png') no-repeat center; background-size: cover;"></div>
 			</div>
+			<div class="VideoDescription">
+				<div class="TitleSideline"></div>
+				<div class="MiniTitle">Stolenpad Studio</div>
+				<div class="Description">
+					<div>For two months, nearly every week I was tasked with developing a new hyper casual game while also coordinating my work with an artist and an animator. Every new game
+						was a bit unique in its own way and came with its own share of twists and challenges.<br/>
+					</div>
+				</div>
+				<div class="LanguagesUsed">
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
+				</div>
+			</div>
+	  	</div>
+  
+	  	<div class="carousel-item container">
+			<div class="VideoWrapper ProfVideo" data-toggle="modal" data-src="https://www.youtube.com/embed/VsLKklKha0M" data-target="#YoutubeModal" data-backdrop="static" data-keyboard="false">
+				<div class="PlayImage"></div>
+				<div class="ThumbImage" style="background: url('./images/Amilcar.jpg') no-repeat center; background-size: cover;"></div>
+			</div>
+			<div class="VideoDescription">
+				<div class="TitleSideline"></div>
+				<div class="MiniTitle">Amilcar technologies</div>
+				<div class="Description">
+					<div>For the period of 5 months, I worked on one of their unannounced games for android which had a diverse range of mechanics: <br/>
+						- A base building phase with a grid and some resource gathering system.<br/>
+						- A deck building phase where the player arranged his multiple decks while also checking what cards he unlocked. <br/>
+						- A basic RTS phase where the player had the ability to spawn new units, controlling them and attacking the enemy base (A basic AI). <br/>
+					</div>
+				</div>
+				<div class="LanguagesUsed">
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
+				</div>
+			</div>
+	  	</div>
+		</div>
+	</div>
+  
+	<!-- Left and right controls -->
+	<div class="Controls container">
+		<div class="ControlNext" href="#ProProjects" data-slide="next"></div>
+		<div class="ControlPrev" href="#ProProjects" data-slide="prev"></div>
+	</div>
+</div>
 
-			<div class="column">
+<!--Youtube Modal-->
 	
+<div class="modal fade" id="YoutubeModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document"> 
+		<div class="modal-content">
+			<button type="button" class="CloseModal" data-dismiss="modal"></button> 
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="" id="ModalVideo"  allowscriptaccess="always" allow="autoplay"></iframe>
 			</div>
 		</div>
 	</div>
+</div>
+
+<div id="Quote">
+	<h1 id="FirstPart">“Learning is like breathing,</h1> <h1 id="SecondPart">you can't live without it” <br> <span>- Me :)<span></span> </h1>
+</div>
+
 <!--Personal Projects section-->
-	<div id="persC">
-		<h2 class="sectionTitles">Personal Projects</h2>
-		<div class="row">
-
-			<div class="column">
-				<div>
-					<a href="ProjectsPages/UntoldFuture.html">
-						<img class="projectImage" src="./images/UntoldFuture.png" /><br/>
-						<br>
-						<div class="SmallTitle">Untold Future : Rogue-like</div>
-					</a>
-
-				</div>
-
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
-				<br/>
-			</div>
-
-			<div class="column">
-				<div>
-					<a href="ProjectsPages/Cygnus3D.html">
-						<img class="projectImage" src="./images/cygnus3D.png" /><br/>
-						<br>
-						<div class="SmallTitle">Cygnus3D : Game Engine</div>
-					</a>
-				</div>
-
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C++</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">OpenGL</span>
-				<br/>
-
-                <a href="https://github.com/HassenBenAbid/Cygnus3D" target="_blank" 
-                class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
-			</div>
-
-			<div class="column">
-
-				<div>
-					<a href="ProjectsPages/ProjectOcct.html">
-						<img class="projectImage" src="./images/OcctDisplay.PNG" /><br/>
-						<br>
-						<div class="SmallTitle">Project Occt</div>
-					</a>
-				</div>
-
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Kotlin</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Android studio</span>
-				<br/>
-
-			</div>
-
+	<div id="PersProjects">
+		<div class="Title">
+			<div class="sectionTitles">Personal Projects</div>
+			<div class="TitleUnderline"></div>
 		</div>
-
-		<div class="row">
-
-			<div class="column">
-				<div>
-					<a href="ProjectsPages/FearNot.html">
-						<img class="projectImage" src="./images/FearNot.png" /><br/>
-						<br>
-						<div class="SmallTitle">FearNot</div>
-					</a>
-				</div>
-
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
-				<br/>
-
-				<a href="https://github.com/HassenBenAbid/FearNot" target="_blank" class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
+		<div class="ColumnFirst">
+			<div class="VideoWrapper PerVideoLeft" data-toggle="modal" data-src="https://www.youtube.com/embed/Xr4G_if2Zms" data-target="#YoutubeModal" data-backdrop="static" data-keyboard="false">
+				<div class="PlayImage"></div>
+				<div class="ThumbImage" style="background: url('./images/cygnus3D.png') no-repeat center; background-size: cover;"></div>
 			</div>
-
-			<div class="column">
-				<div>
-					<a href="ProjectsPages/Stupidus.html">
-						<img class="projectImage" src="./images/Stupidus.png" /><br/>
-						<br>
-						<div class="SmallTitle">Stupidus : 2 Days Jam</div>
-					</a>
-
+			<div class="ColumnDescriptionRight">
+				<div class="TitleSideline"></div>
+				<div class="MiniTitle">Cygnus3D : Game Engine</div>
+				<div class="Description">
+					<div>
+						This is an unfinished small game engine that I developed using C++/OpenGL. It has a basic rendering, some physics implementation using bullet, a loading model system
+						with skeletal animation and also a basic lighting system. If I ever decide to continue working on it, I will be implementing shadow mapping and make some optimisation to my code. <br/><br/>
+						I started this project as a mean to understand the backbones of game engines but also to challenge myself.
+						To approach this, I started by creating a small 2D game using C++ and openGL and from there I chose the 
+						features that I want to work on and made a roadmap for myself.
+					</div>
 				</div>
-
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
 				<br/>
-
-				<a href="https://github.com/HassenBenAbid/Stupidus" target="_blank" class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
+				<div class="LanguagesUsed">
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">C++</span>
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">OpenGL</span>
+					<a href="https://github.com/HassenBenAbid/Cygnus3D" target="_blank" 
+					class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
+				</div>
 			</div>
-
-			<div class="column">
-				<div>
-					<a href="ProjectsPages/SmallProjects.html">
-						<img class="projectImage" src="./images/DontFall.png" /><br/>
-						<br>
-						<div class="SmallTitle">Small projects</div>
-					</a>
-
+		</div>
+		<div class="ColumnSecond">
+			<div class="ColumnDescriptionLeft">
+				<div class="TitleSideline"></div>
+				<div class="MiniTitle">Untold Future : Rogue-Like</div>
+				<div class="Description">
+					<div>
+						- This is a rogue-like top down shooter where every new restart would generate a new dungeon for the player to explore. To achieve that, I used BSP tree to create the boundaries of each
+						room and then Delaunay triangulation to connect them. Thanks to some preset rules, the algorithm would then choose a bunch of these corridors and connect them using the A* algorithm. 
+						For the final touch we choose, from a large pool of different rooms, what kind of rooms we want and set them into their specific places.
+						<br/><br/>
+						- I also developed my own AI system using a middle ground between pluggable AI and behaviour trees to create different AI personalities. I also worked on some Coop functionalities but those
+						weren’t implemented in the end.
+						<br/><br/>
+						All assets were imported from the Unity asset store. <br/>
+					</div>
 				</div>
-
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">C++</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">Qt</span>
-				<span class="langTag w3-tag w3-blue w3-round-large w3-center">OpenGL</span>
 				<br/>
-
+				<div class="LanguagesUsed">
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
+				</div>
+			</div>
+			<div class="VideoWrapper PerVideoRight" data-toggle="modal" data-src="https://www.youtube.com/embed/A7fQHOdjjb4" data-target="#YoutubeModal" data-backdrop="static" data-keyboard="false">
+				<div class="PlayImage"></div>
+				<div class="ThumbImage" style="background: url('./images/UntoldFuture.png') no-repeat center; background-size: cover;"></div>
+			</div>
+		</div>
+		<div class="ColumnFirst">
+			<div class="VideoWrapper PerVideoLeft">
+				<div class="ThumbImage" style="background: url('./images/OcctDisplay.PNG') no-repeat center; background-size: cover;"></div>
+			</div>
+			<div class="ColumnDescriptionRight">
+				<div class="TitleSideline"></div>
+				<div class="MiniTitle">Project Occt</div>
+				<div class="Description">
+					<div>
+						This is an android app compatible with any device that support miracast, that helps make digital acuity test more affordable for everybody.
+						<br/>
+						The app cast on any screen of your choice the different charts while transforming your smartphone into a simple remote controller.
+						the available charts are : LogMar, Lea, tumbling but also a duochrome option and an astigmatism test. Plus a fun chart for the kids. 
+						<br><br>
+						<a href="https://drive.google.com/file/d/1NRIC6zvP4v8PsfVKXoV-ivRKP-Bek14i/view?usp=sharing">You can download a beta version of the app from here.</a> 
+					</div>
+				</div>
+				<br/>
+				<div class="LanguagesUsed">
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">Kotlin</span>
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">Android studio</span>
+							<a href="https://github.com/HassenBenAbid/OccT" target="_blank" 
+					class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
+				</div>
+			</div>
+		</div>
+		<div class="ColumnSecond">
+			<div class="ColumnDescriptionLeft">
+				<div class="TitleSideline"></div>
+				<div class="MiniTitle">FearNot : 2D Unity Game</div>
+				<div class="Description">
+					<div>
+						This was my second bachelor year project, I created nearly all the assets used in this 
+						game.<br/><br/>
+						With this, I experimented with many new features like a ragdoll physic system which 
+						made the death of the enemies more realistic and satisfying and some 
+						simple procuderal generation which is a very interesting subject for me. <br/>
+						Some boss encounters and some narrative were also implemented.
+					</div>
+				</div>
+				<br/>
+				<div class="LanguagesUsed">
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
+					<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
+					<a href="https://github.com/HassenBenAbid/FearNot" target="_blank" 
+					class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
+				</div>
+			</div>
+			<div class="VideoWrapper PerVideoRight" data-toggle="modal" data-src="https://www.youtube.com/embed/hEGC3Xegj4Y" data-target="#YoutubeModal" data-backdrop="static" data-keyboard="false">
+				<div class="PlayImage"></div>
+				<div class="ThumbImage" style="background: url('./images/FearNot.png') no-repeat center; background-size: cover;"></div>
 			</div>
 		</div>
 	</div>
+	<div class="ColumnFirst">
+		<div class="VideoWrapper PerVideoLeft" data-toggle="modal" data-src="https://www.youtube.com/embed/ihONz6DQQPE" data-target="#YoutubeModal" data-backdrop="static" data-keyboard="false">
+			<div class="PlayImage"></div>
+			<div class="ThumbImage" style="background: url('./images/Stupidus.png') no-repeat center; background-size: cover;"></div>
+		</div>
+		<div class="ColumnDescriptionRight">
+			<div class="TitleSideline"></div>
+			<div class="MiniTitle">Other small projects</div>
+			<div class="Description">
+				<div>
+					- Stupidus : I developed this game in 2 days in a game jam in my university. It's a simple 
+					shooter top-down game with a boss fight at the end (It's the game in the video).<br/>
+					<a href="https://itch.io/" target="_blank">Assets from itch.io</a>
+					<div class="LanguagesUsed">
+						<span class="langTag w3-tag w3-blue w3-round-large w3-center">C#</span>
+						<span class="langTag w3-tag w3-blue w3-round-large w3-center">Unity</span>
+						<a href="https://github.com/HassenBenAbid/Stupidus" target="_blank" 
+						class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
+					</div><br/>
+
+					- OpenGL Flappybird Clone : I Built this game in my journey to understand openGL and start building my own game engine, 
+					it's basically a flappyBird clone.
+					<div class="LanguagesUsed">
+						<span class="langTag w3-tag w3-blue w3-round-large w3-center">C++</span>
+						<span class="langTag w3-tag w3-blue w3-round-large w3-center">OpenGL</span>
+						<a href="https://github.com/HassenBenAbid/FreeFalling" target="_blank" 
+						class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
+					</div><br/>
+					- Qt Space invader : I built My first game with an actualy graphical interface using C++ and QT at the age of 14, I m only mentioning it because of its nostalgia effect on me.
+					<div class="LanguagesUsed">
+						<span class="langTag w3-tag w3-blue w3-round-large w3-center">C++</span>
+						<span class="langTag w3-tag w3-blue w3-round-large w3-center">QT</span>
+					</div><br/>
+				</div>
+			</div>
+			<br/>
+		</div>
+	</div>
+
 
 <!--contact section-->
-	<div class="contactContainer" id="contactC"> 
-		<h2 class="sectionTitles">Contact</h2>
-		<div class="container">
-			<form class="contact" action="https://formspree.io/hassenbenabid@protonmail.com" method="post">
-				<div class="contactText">
-					<input class="formControl" type="text" name="name" placeholder="name" required="required"> <br>
-					<input class="formControl" type="text" name="subject" placeholder="subject" required="required"> <br>
-					<input class="formControl" type="email" name="email" placeholder="Email" required="required"> <br>
-					<textarea class="formControl" name="message" placeholder="Your message" required="required" rows="4"></textarea> <br>
-					<input class="formControl topBut" type="submit" name="submit" value="Send">
-				</div>
-				<div class="contactText">
-					<div class="info"><span>Phone</span> <br>(+216)  29883468</div>
-					<div class="info"><span>Email</span> <br>HassenBenAbid@protonmail.com</div>
-					<div class="info"><span>Address</span> <br>4051 sousse, Tunisia. 
-				</div>
-			</form>
+	<div id="ContactC"> 
+		<div class="Title" style="background-color: #191f36;">
+			<div class="sectionTitles">Contact me!</div>
+			<div class="TitleUnderline"></div>
 		</div>
+		<div id="ContactDesc" >If you're interested in my work (Or just want to play some RTS games) feel free to send me a message here
+		<a href="mailto:HassenBenAbid@protonmail.com" target="_blank">HassenBenAbid@protonmail.com</a> or from LinkedIn <br/><br/>
+		<a class="fa fa-linkedin-square SocialIcon" style="font-size: 50px;" href="https://www.linkedin.com/in/hassen-ben-abid/" target="_blank"></a>
 		</div>
 	</div>
 <!--end section-->
-	<div class="footer">
-		<h1>“The day you stop learning is the day you stop existing.” <br> <span>-Me :)<span></h1>
-	</div>
-	<script type="text/javascript" src="./control/jquery-3.5.1.min.js" ></script>
+	<script type="text/javascript" src="./control/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="./control/control.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
