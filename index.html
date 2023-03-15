@@ -9,8 +9,6 @@
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./style/w3.css"> 
 </head>
@@ -23,8 +21,8 @@
 				<div class="nav">
 					<ul>
 						<li class="navL"><a href="#aboutC">About</a></li>
-						<li class="navL"><a href="#ProProjects">Professional Projects</a></li>
-						<li class="navL"><a href="#PersProjects">Personal Projects</a></li>
+						<li class="navL"><a href="#ProProjects">Professional</a></li>
+						<li class="navL"><a href="#PersProjects">Personal</a></li>
 						<li class="navL"><a href="#ContactC">Contact</a></li>
 					</ul>
 				</div>
@@ -75,10 +73,12 @@
 					<div class="TitleSideline"></div>
 					<div class="MiniTitle">Strange Loop Games</div>
 					<div class="Description">
-						<div>While working with SLG on ECO I worked on different systems : <br/>
-							- Reworking the chat wich its different channels, customisations and its working logic on the server side.<br/>
-							- Reworking the tooltip system (the different Hints that show up for the player). <br/>
-							- Also I touched into many other aspects of the game while fixing different bugs and adding many new features.
+						<div> <br/>
+							- Co-lead the implementation of the whole tooltip system on both the client and server side.<br/>
+							- Helped in reworking the chat system.<br/>
+							- Took part in implementing different government features. <br/>
+							- Benchmarked and optimized different parts of some legacy code. <br/>
+							- Constantly debugged and fixed broken features in record times.
 						</div>
 					</div>
 					<div class="LanguagesUsed">
@@ -97,8 +97,11 @@
 				<div class="TitleSideline"></div>
 				<div class="MiniTitle">Stolenpad Studio</div>
 				<div class="Description">
-					<div>For two months, nearly every week I was tasked with developing a new hyper casual game while also coordinating my work with an artist and an animator. Every new game
-						was a bit unique in its own way and came with its own share of twists and challenges.<br/>
+					<div> <br/>
+						- Prototyped and developed a new hyper-casual game every two weeks.<br/>
+						- Coordinated my work with both an artist and an animator. <br/>
+						- Tested games on both android and iOS. <br/>
+						- Implemented different APIs to track the player progression and game statistics.<br/>
 					</div>
 				</div>
 				<div class="LanguagesUsed">
@@ -117,10 +120,10 @@
 				<div class="TitleSideline"></div>
 				<div class="MiniTitle">Amilcar technologies</div>
 				<div class="Description">
-					<div>For the period of 5 months, I worked on one of their unannounced games for android which had a diverse range of mechanics: <br/>
-						- A base building phase with a grid and some resource gathering system.<br/>
-						- A deck building phase where the player arranged his multiple decks while also checking what cards he unlocked. <br/>
-						- A basic RTS phase where the player had the ability to spawn new units, controlling them and attacking the enemy base (A basic AI). <br/>
+					<div> <br/>
+						- Implemented a base building system with a grid and some resource gathering and management. <br/>
+						- Implemented a deck building system where the player unlocked and customized his multiple decks. <br/>
+						- Worked on a small RTS battle system where the player had the ability to spawn and control different types of units and fight against a basic AI. 
 					</div>
 				</div>
 				<div class="LanguagesUsed">
@@ -169,14 +172,13 @@
 			</div>
 			<div class="ColumnDescriptionRight">
 				<div class="TitleSideline"></div>
-				<div class="MiniTitle">Cygnus3D : Game Engine</div>
+				<div class="MiniTitle">Cygnus3D : Game Engine</div> <br/>
 				<div class="Description">
 					<div>
-						This is an unfinished small game engine that I developed using C++/OpenGL. It has a basic rendering, some physics implementation using bullet, a loading model system
-						with skeletal animation and also a basic lighting system. <br/><br/>
-						I started this project as a mean to understand the backbones of game engines but also to challenge myself.
-						To approach this, I started by creating a small 2D game using C++ and openGL and from there I chose the 
-						features that I want to work on and made a roadmap for myself.
+						A small game engine that I developed using C++/OpenGL. It has a basic rendering, some physics implementation using the bullet library, a loading model system 
+						with skeletal animation and a basic lighting system. <br/> <br/>
+						This was started as a mean to understand the backbones of game engines but also to challenge myself. <br/>
+						To approach this, I started by creating a small 2D game using C++ and openGL and from there I chose the features that I want to work on and made a roadmap for myself.
 					</div>
 				</div>
 				<br/>
@@ -191,16 +193,16 @@
 		<div class="ColumnSecond">
 			<div class="ColumnDescriptionLeft">
 				<div class="TitleSideline"></div>
-				<div class="MiniTitle">Untold Future : Rogue-Like</div>
+				<div class="MiniTitle">Untold Future : Rogue-Like</div> <br/>
 				<div class="Description">
 					<div>
-						- This is a rogue-like top down shooter where every new restart would generate a new dungeon for the player to explore. To achieve that, I used BSP tree to create the boundaries of each
-						room and then Delaunay triangulation to connect them. Thanks to some preset rules, the algorithm would then choose a bunch of these corridors and connect them using the A* algorithm. 
-						For the final touch we choose, from a large pool of different rooms, what kind of rooms we want and set them into their specific places.
+						- A rogue-like top down shooter where every new restart generates a new dungeon. 
+						This was done by using BPS tree to create the boundaries of each room, then Delaunay triangulation to connect them and finally (with the help of some preset rules)
+						the A* algorithm to create the corridors. <br/>
+						For the final touch, using a large pool of different rooms, it chooses the right rooms to set in the right places.
 						<br/><br/>
-						- I also developed my own AI system using a middle ground between pluggable AI and behaviour trees to create different AI personalities. I also worked on some Coop functionalities but those
-						weren’t implemented in the end.
-						<br/><br/>
+						- I also developed my own AI system using a middle ground between pluggable AI and behavior trees to create different AI personalities.
+						Some local Coop functionalities were worked on but never implemented in the end. <br/> <br/>
 						All assets were imported from the Unity asset store. <br/>
 					</div>
 				</div>
@@ -221,12 +223,12 @@
 			</div>
 			<div class="ColumnDescriptionRight">
 				<div class="TitleSideline"></div>
-				<div class="MiniTitle">Project Occt</div>
+				<div class="MiniTitle">Project Occt</div> <br/>
 				<div class="Description">
 					<div>
-						This is an android app compatible with any device that support miracast, that helps make digital acuity test more affordable for everybody.
+						An android app compatible with any device that support miracast that helps make digital acuity test more affordable for everybody.
 						<br/>
-						The app cast on any screen of your choice the different charts while transforming your smartphone into a simple remote controller.
+						The app cast, on any screen of your choice, the different charts while transforming your smartphone into a simple remote controller.
 						the available charts are : LogMar, Lea, tumbling but also a duochrome option and an astigmatism test. Plus a fun chart for the kids. 
 						<br><br>
 						<a href="https://drive.google.com/file/d/1NRIC6zvP4v8PsfVKXoV-ivRKP-Bek14i/view?usp=sharing">You can download a beta version of the app from here.</a> 
@@ -244,14 +246,14 @@
 		<div class="ColumnSecond">
 			<div class="ColumnDescriptionLeft">
 				<div class="TitleSideline"></div>
-				<div class="MiniTitle">FearNot : 2D Unity Game</div>
+				<div class="MiniTitle">FearNot : 2D Unity Game</div> <br/>
 				<div class="Description">
 					<div>
 						This was my second bachelor year project, I created nearly all the assets used in this 
 						game.<br/><br/>
 						With this, I experimented with many new features like a ragdoll physic system which 
 						made the death of the enemies more realistic and satisfying and some 
-						simple procuderal generation which is a very interesting subject for me. <br/>
+						simple procedural generation which is a very interesting subject for me. <br/>
 						Some boss encounters and some narrative were also implemented.
 					</div>
 				</div>
@@ -276,7 +278,7 @@
 		</div>
 		<div class="ColumnDescriptionRight">
 			<div class="TitleSideline"></div>
-			<div class="MiniTitle">Other small projects</div>
+			<div class="MiniTitle">Other small projects</div> <br/>
 			<div class="Description">
 				<div>
 					- Stupidus : I developed this game in 2 days in a game jam in my university. It's a simple 
@@ -297,7 +299,7 @@
 						<a href="https://github.com/HassenBenAbid/FreeFalling" target="_blank" 
 						class="gitButton w3-tag w3-green w3-round-large w3-center">GitHub</a><br/>
 					</div><br/>
-					- Qt Space invader : I built My first game with an actualy graphical interface using C++ and QT at the age of 14, I m only mentioning it because of its nostalgia effect on me.
+					- Qt Space invader : I built My first game with an actualy graphical interface using C++ and QT at the age of 14, I'm only mentioning it because of its nostalgia effect on me.
 					<div class="LanguagesUsed">
 						<span class="langTag w3-tag w3-blue w3-round-large w3-center">C++</span>
 						<span class="langTag w3-tag w3-blue w3-round-large w3-center">QT</span>

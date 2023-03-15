@@ -62,7 +62,7 @@ a:hover{
 .home{
 	color: #fff;
 	float: left;
-	font-family: righteous, "baloo chettan", Open Sans;
+	font-family: "righteous";
 	font-size: 26px;
 	padding-top: 11px;
 	font-weight: bold;
@@ -75,7 +75,7 @@ a:hover{
 	margin-left: 60px;
 	margin-top: 15px;
 	
-	font-family: righteous, "baloo chettan", Open Sans;
+	font-family: "righteous";
 }
 
 .nav{
@@ -176,7 +176,7 @@ a:hover{
 
 .nameTop{
 	font-size: 3.8em;
-	font-family: righteous, "baloo chettan", Open Sans ;
+	font-family: "righteous";
 	color: white;
 }
 
@@ -192,7 +192,7 @@ a:hover{
 .topBut{
 	margin-top: 20px;
 	font-size: 1.3em;
-	font-family: Righteous, "baloo chettan", Open Sans;
+	font-family: "Righteous";
 
 	text-decoration: none;
 	display: inline-block;
@@ -225,7 +225,7 @@ a:hover{
 	-webkit-text-fill-color: transparent;
 	padding-top: 15px;
 	padding-bottom: 0px;
-	font-family: righteous, "baloo chettan", "Open Sans";
+	font-family: "righteous";
 }
 
 #aboutC{
@@ -239,7 +239,7 @@ a:hover{
 	padding-top: 15px;
 	padding-bottom : 25px;
 	font-size: 1.1em;
-	font-family: "righteous", "baloo chettan",Open Sans;
+	font-family: "righteous";
 	margin : 0;
 }
 
@@ -349,7 +349,7 @@ a:hover{
 	width: 35%;
 	float: right;
 	color: white;
-	font-family: "righteous", "baloo chettan","Open Sans";
+	font-family: "righteous";
 }
 
 .Description{
@@ -415,7 +415,7 @@ a:hover{
 #Quote h1{
 	padding-top: 10px;
 	font-size: 40px;
-	font-family: "righteous", "baloo chettan", "Open Sans";
+	font-family: "righteous";
 }
 
 #FirstPart{
@@ -462,17 +462,16 @@ a:hover{
 	background: -webkit-linear-gradient( -70deg,#4e34c9,#686de0);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-family: righteous, "baloo chettan", "Open Sans";
+	font-family: righteous;
 }
 
 /*Personal projects*/
 
 .ColumnFirst{
-	padding-left: 10%;
+	padding-left: 19%;
 	background-color: #111525;
 	padding-top: 3%;
 	padding-bottom: 3%;
-	padding-left: 19%;
 	display: flex;
 }
 
@@ -494,7 +493,7 @@ a:hover{
 	padding-right: 20%;
 	float: right;
 	color: white;
-	font-family: righteous, "baloo chettan", "Open Sans";
+	font-family: "righteous";
 }
 
 .ColumnSecond{
@@ -523,7 +522,7 @@ a:hover{
 	padding-top: 0.5%;
 	float: right;
 	color: white;
-	font-family: righteous, "baloo chettan", "Open Sans";
+	font-family: "righteous";
 }
 
 
@@ -540,20 +539,21 @@ a:hover{
 }
 
 .langTag{
-	font-family: "baloo chettan", righteous, Open Sans;
+	font-family: "righteous";
 	font-size: 0.85em;
 	margin-top: 5px;
 	padding: 0.5%;
 }
 
 .gitButton{
-	font-family: "baloo chettan", righteous, Open Sans;
+	font-family: "righteous";
 	font-size: 0.85em;
 
 	text-align: right;
 
+	margin-left: 1%;
 	margin-top: 5px;
-	padding: 0.5%;
+	padding: 1%;
 	transition: font-size 0.1s ease-out;
 }
 
@@ -582,7 +582,7 @@ a:hover{
 	padding-top: 1%;
 	padding-bottom: 1%;
 	color: #c2c2c2;
-	font-family: righteous, "baloo chettan", "Open Sans";
+	font-family: "righteous";
 	font-size: 15px;
 }	
 
